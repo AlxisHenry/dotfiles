@@ -1,6 +1,12 @@
 # Git autocompletion
 source ~/utils/.git-completion.bash;
 
+# Packages
+for package in ~/.{path,aliases,functions}; do
+  [ -r "$package" ] && [ -f "$package" ] && source "$package";
+done
+unset package;
+
 # Enable the subsequent settings only in interactive sessions
 case $- in
   *i*) ;;
