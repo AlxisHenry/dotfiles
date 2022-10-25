@@ -6,9 +6,16 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin main;
 
+# Source scripts from bin folder
+for script in $(ls ./bin); do
+	source "./bin/$script";
+done
+
 function deploy() {
 	rsync -avh --no-perms ./packages/ ~;
-	source ~/.bash_profile;
+	__git__;
+	__oh_my_bash__;
+	source ~/.bashrc;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
