@@ -3,7 +3,7 @@
 # oh-my-bash setup
 
 function __omb__repository() {
-	git clone https://github.com/ohmybash/oh-my-bash.git ~/.oh-my-bash;
+	bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 }
 
 function __oh_my_bash__() {
