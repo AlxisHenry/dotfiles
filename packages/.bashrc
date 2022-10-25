@@ -14,11 +14,10 @@ case $- in
 esac
 
 # Path to your oh-my-bash installation.
-export OSH=/home/alexis/.oh-my-bash
+export OSH=/home/${USER}/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-#OSH_THEME="pro"
 OSH_THEME="minimal"
 
 # Uncomment the following line to use case-sensitive completion.
