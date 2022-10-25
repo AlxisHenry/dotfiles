@@ -25,7 +25,7 @@
 
 - [Getting Started](#toolbox-getting-started)
   * [Installation](#gear-installation)
-  * [Deployment](#gear-deployment)
+  * [Update](#gear-update)
 - [Contributing](#heavy_dollar_sign-contributing)
 - [Authors](#wave-auteurs)
 
@@ -35,6 +35,12 @@
 
 ```bash
 git clone https://github.com/AlxisHenry/dotfiles.git && cd dotfiles && source deploy.sh
+```
+
+### :gear: Update
+
+```bash
+cd dotfiles && [set -- -force;] source deploy.sh
 ```
 
 ## :heavy_dollar_sign: Contributing
