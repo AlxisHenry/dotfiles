@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Inspired by https://github.com/mathiasbynens/dotfiles
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin main;
