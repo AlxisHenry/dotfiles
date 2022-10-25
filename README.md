@@ -1,6 +1,6 @@
 # Alexis's dotfiles
 
-**Inspired by @mathiasbynens dotfiles repository.**
+**Inspired by** @mathiasbynens **dotfiles repository.**
 
 ## Contributing
 
