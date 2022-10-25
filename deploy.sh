@@ -13,7 +13,6 @@ done
 
 function deploy() {
 	__git__;
-	__oh_my_bash__;
 	rsync -avh --no-perms ./packages/ ~;
 	source ~/.bashrc;
 }
