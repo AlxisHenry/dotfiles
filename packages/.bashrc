@@ -5,6 +5,9 @@
 # Git autocompletion
 source ~/utils/.git-completion.bash;
 
+# Aliases
+source ~/utils/aliases.sh;
+
 # Packages
 for package in ~/.{path,aliases,functions}; do
   [ -r "$package" ] && [ -f "$package" ] && source "$package";
