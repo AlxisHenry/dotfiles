@@ -1,0 +1,3 @@
+function @sed() {
+	bash ~/utils/scripts/sed $1 $2 $3 ${@:4};
+}

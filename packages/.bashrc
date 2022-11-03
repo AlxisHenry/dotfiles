@@ -8,6 +8,9 @@ source ~/utils/.git-completion.bash;
 # Aliases
 source ~/utils/aliases.sh;
 
+# Functions
+source ~/.functions;
+
 # Packages
 for package in ~/.{path,aliases,functions}; do
   [ -r "$package" ] && [ -f "$package" ] && source "$package";
