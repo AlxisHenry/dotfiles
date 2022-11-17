@@ -11,12 +11,6 @@ source ~/utils/aliases.sh;
 # Functions
 source ~/.functions;
 
-# Packages
-for package in ~/.{path,aliases,functions}; do
-  [ -r "$package" ] && [ -f "$package" ] && source "$package";
-done
-unset package;
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
