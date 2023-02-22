@@ -2,18 +2,15 @@
 
 # Inspired by https://github.com/mathiasbynens/dotfiles
 
+# This is my personal dotfiles.
+# Please check what this code is doing before launching it.
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 
-# Source scripts from bin folder
-for script in $(ls ./bin); do
-	source "./bin/$script";
-done
-
 function deploy() {
-	__git__;
-	rsync -avh --no-perms ./packages/ ~;
+	rsync -avh --no-perms ./packages/* ~;
 	source ~/.bashrc;
 }
 
@@ -26,6 +23,10 @@ else
 		deploy;
 	fi;
 fi;
+
+if [ "$1" == "--deployment" -o "$1" == "-d" ]; then
+	git clone git@github.com:AlxisHenry/deployment.git ~/bin/deployment
+fi
 
 unset deploy;
 cd ~;

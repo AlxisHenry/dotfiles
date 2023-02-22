@@ -2,14 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# Git autocompletion
-source ~/utils/.git-completion.bash;
-
-# Aliases
 source ~/utils/aliases.sh;
-
-# Functions
-source ~/.functions;
 
 # If not running interactively, don't do anything
 case $- in
