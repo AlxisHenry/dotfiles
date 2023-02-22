@@ -1,0 +1,11 @@
+googlechrome
+visualstudiocode
+git
+nodejs
+yarn
+docker-desktop
+postman
+npm
+insomnia
+discord
+spotify

@@ -1,0 +1,118 @@
+{
+  "editor.dragAndDrop": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": false,
+  "editor.linkedEditing": true,
+  "editor.occurrencesHighlight": false,
+  "editor.suggest.insertMode": "replace",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.fontFamily": "'JetBrains Mono', 'Consolas', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 26,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.insertSpaces": false,
+  "editor.mouseWheelZoom": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.maxTokenizationLineLength": 72962395693629563,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.inlineSuggest.enabled": true,
+
+  /**
+   * Files
+   */
+  "files.autoSave": "onFocusChange",
+  "files.defaultLanguage": "markdown",
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+
+  /**
+   * Explorer
+   */
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  /**
+   * Workbench
+   */
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorCustomizations": {
+    "[Tokyo Night]": {
+      "editor.selectionBackground": "#3D59A1",
+      "editor.selectionHighlightBackground": "#3D59A1"
+    }
+  },
+
+  /**
+   * Emmet
+   */
+  "emmet.triggerExpansionOnTab": true,
+
+  /**
+   * Git
+   */
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  // Gitlens
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  },
+
+  /**
+   * Custom Commands
+   */
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.makeRoom",
+      "sequence": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.action.toggleActivityBarVisibility"
+      ]
+    }
+  ],
+
+  /**
+   * Liverserver
+   */
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  /**
+   * Custom languages settings
+   */
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": false
+    },
+    "editor.tabSize": 4
+  },
+  "workbench.startupEditor": "none",
+  "git.autofetch": true,
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "window.zoomLevel": 2,
+  "diffEditor.ignoreTrimWhitespace": false
+}{
+}
